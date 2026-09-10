@@ -10,14 +10,14 @@
 
 <style>
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
-    --accent: #38bdf8;
-    --bg: #f8fafc;
-    --card-bg: #ffffff;
-    --text-main: #0f172a;
-    --text-muted: #475569;
-    --nav-bg: #0f172a;
+    --primary: #9ca3af;
+    --primary-dark: #6b7280;
+    --accent: #e5e7eb;
+    --bg: #0b0b0b;
+    --card-bg: #171717;
+    --text-main: #f5f5f5;
+    --text-muted: #b5b5b5;
+    --nav-bg: #050505;
 }
 
 * {
@@ -36,7 +36,7 @@ body {
 
 /* Header Section */
 header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #2563eb 100%);
+    background: linear-gradient(135deg, #050505 0%, #1f1f1f 45%, #4b4b4b 100%);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -60,7 +60,7 @@ header h3 {
 header p {
     max-width: 600px;
     margin: 15px auto 25px auto;
-    color: #cbd5e1;
+    color: #d1d1d1;
     font-size: 17px;
 }
 
@@ -69,7 +69,7 @@ header p {
     align-items: center;
     gap: 8px;
     padding: 12px 28px;
-    background: var(--primary);
+    background: linear-gradient(135deg, #111111, #4b4b4b);
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -79,7 +79,7 @@ header p {
 }
 
 .btn:hover {
-    background: var(--primary-dark);
+    background: linear-gradient(135deg, #444444, #999999);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
 }
@@ -97,7 +97,7 @@ nav {
 }
 
 nav a {
-    color: #94a3b8;
+    color: #bdbdbd;
     text-decoration: none;
     margin: 0 16px;
     font-weight: 600;
@@ -130,7 +130,7 @@ section {
     display: block;
     width: 50px;
     height: 4px;
-    background: var(--primary);
+    background: linear-gradient(135deg, #111111, #4b4b4b);
     margin: 8px auto 0 auto;
     border-radius: 2px;
 }
@@ -145,14 +145,14 @@ section {
     background: var(--card-bg);
     padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
 .profile {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: linear-gradient(135deg, #111111, #4b4b4b, #9ca3af);
     color: white;
     display: flex;
     align-items: center;
@@ -189,8 +189,8 @@ section {
     padding: 24px;
     text-align: center;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.30);
+    border: 1px solid #333333;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -205,7 +205,7 @@ section {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    background: var(--primary);
+    background: linear-gradient(135deg, #111111, #4b4b4b);
     color: white;
     border-color: var(--primary);
 }
@@ -225,8 +225,8 @@ section {
     background: var(--card-bg);
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+    border: 1px solid #333333;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -250,7 +250,7 @@ section {
 .table-wrapper {
     overflow-x: auto;
     border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
 }
 
 table {
@@ -262,7 +262,7 @@ table {
 
 th, td {
     padding: 18px 24px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #333333;
 }
 
 th {
@@ -280,7 +280,7 @@ tr:last-child td {
     background: var(--card-bg);
     padding: 35px;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
@@ -296,7 +296,7 @@ tr:last-child td {
 .contact-item i {
     font-size: 20px;
     color: var(--primary);
-    background: #eff6ff;
+    background: #262626;
     padding: 12px;
     border-radius: 50%;
 }
@@ -313,12 +313,61 @@ tr:last-child td {
 /* Footer */
 footer {
     background: var(--nav-bg);
-    color: #94a3b8;
+    color: #bdbdbd;
     text-align: center;
     padding: 30px 20px;
     margin-top: 80px;
     font-size: 14px;
 }
+
+/* Black & Grey Premium Theme */
+.about,
+.card,
+.skill-card,
+.contact-box,
+table {
+    background: linear-gradient(145deg, #151515, #202020);
+}
+
+.about-text h3,
+.card h3 {
+    color: #f3f3f3;
+}
+
+.section-title {
+    color: #f5f5f5;
+}
+
+.skill-card,
+.card,
+.contact-box,
+.table-wrapper {
+    border-color: #303030;
+}
+
+.about:hover,
+.card:hover,
+.skill-card:hover {
+    border-color: #555555;
+}
+
+.profile {
+    border: 2px solid #777777;
+    letter-spacing: 2px;
+}
+
+nav {
+    background: linear-gradient(90deg, #050505, #171717, #050505);
+}
+
+th {
+    background: linear-gradient(90deg, #111111, #3a3a3a);
+}
+
+footer {
+    background: linear-gradient(135deg, #050505, #1c1c1c, #050505);
+}
+
 </style>
 </head>
 
@@ -345,7 +394,7 @@ footer {
 <section id="about">
     <h2 class="section-title">About Me</h2>
     <div class="about">
-        <div class="profile">BL</div>
+        <div class="profile">UK</div>
         <div class="about-text">
             <h3>Hello, I'M Muvva uday kiran</h3>
             <p>
