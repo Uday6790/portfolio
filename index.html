@@ -1,18 +1,12 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Muvva Uday Kiran | Software Developer Portfolio</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <style>
-
 :root {
     --primary: #9ca3af;
     --primary-dark: #6b7280;
@@ -23,7 +17,6 @@
     --text-muted: #b5b5b5;
     --nav-bg: #050505;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -31,15 +24,11 @@
     font-family: 'Inter', Segoe UI, sans-serif;
     scroll-behavior: smooth;
 }
-
 body {
     background: var(--bg);
     color: var(--text-main);
     line-height: 1.6;
 }
-
-/* HEADER */
-
 header {
     background: linear-gradient(135deg, #050505 0%, #1f1f1f 45%, #4b4b4b 100%);
     color: white;
@@ -48,29 +37,23 @@ header {
     position: relative;
     overflow: hidden;
 }
-
 header h1 {
     font-size: 52px;
     font-weight: 700;
     letter-spacing: -1px;
 }
-
 header h3 {
     margin: 12px 0;
     font-weight: 400;
     color: var(--accent);
     font-size: 22px;
 }
-
 header p {
     max-width: 600px;
     margin: 15px auto 25px;
     color: #d1d1d1;
     font-size: 17px;
 }
-
-/* BUTTON */
-
 .btn {
     display: inline-flex;
     align-items: center;
@@ -84,15 +67,11 @@ header p {
     transition: all 0.3s ease;
     box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
 }
-
 .btn:hover {
     background: linear-gradient(135deg, #444444, #999999);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
 }
-
-/* NAVIGATION */
-
 nav {
     background: linear-gradient(90deg, #050505, #171717, #050505);
     backdrop-filter: blur(8px);
@@ -103,7 +82,6 @@ nav {
     z-index: 1000;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 nav a {
     color: #bdbdbd;
     text-decoration: none;
@@ -112,19 +90,12 @@ nav a {
     font-size: 15px;
     transition: color 0.3s;
 }
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* SECTIONS */
-
+nav a:hover { color: var(--accent); }
 section {
     max-width: 1100px;
     margin: 60px auto;
     padding: 0 20px;
 }
-
 .section-title {
     text-align: center;
     color: #f5f5f5;
@@ -133,7 +104,6 @@ section {
     margin-bottom: 40px;
     position: relative;
 }
-
 .section-title::after {
     content: '';
     display: block;
@@ -143,9 +113,6 @@ section {
     margin: 8px auto 0;
     border-radius: 2px;
 }
-
-/* ABOUT */
-
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +124,6 @@ section {
     border-radius: 16px;
     box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
-
 .profile {
     width: 150px;
     height: 150px;
@@ -173,31 +139,14 @@ section {
     border: 2px solid #777777;
     letter-spacing: 2px;
 }
-
-.about-text {
-    flex: 1;
-    min-width: 280px;
-}
-
-.about-text h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
-    color: #f3f3f3;
-}
-
-.about-text p {
-    color: var(--text-muted);
-    margin-bottom: 10px;
-}
-
-/* SKILLS */
-
+.about-text { flex: 1; min-width: 280px; }
+.about-text h3 { font-size: 24px; margin-bottom: 12px; color: #f3f3f3; }
+.about-text p { color: var(--text-muted); margin-bottom: 10px; }
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
 }
-
 .skill-card {
     background: linear-gradient(145deg, #151515, #202020);
     padding: 24px;
@@ -208,7 +157,6 @@ section {
     font-weight: 600;
     transition: all 0.3s ease;
 }
-
 .skill-card i {
     font-size: 28px;
     display: block;
@@ -216,29 +164,301 @@ section {
     color: var(--primary);
     transition: color 0.3s ease;
 }
-
 .skill-card:hover {
     transform: translateY(-5px);
     background: linear-gradient(135deg, #111111, #4b4b4b);
     color: white;
     border-color: var(--primary);
 }
-
-.skill-card:hover i {
-    color: white;
-}
-
-/* PROJECTS */
-
+.skill-card:hover i { color: white; }
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
 }
-
 .card {
     background: linear-gradient(145deg, #151515, #202020);
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.30);
-    border: 1
+    border: 1px solid #303030;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    border-color: #555555;
+}
+.card h3 { color: #f3f3f3; margin-bottom: 12px; font-size: 20px; }
+.card p { color: var(--text-muted); font-size: 15px; }
+.card a {
+    color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.card a:hover { text-decoration: underline; }
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+    border: 1px solid #303030;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, #151515, #202020);
+    text-align: left;
+}
+th, td {
+    padding: 18px 24px;
+    border-bottom: 1px solid #333333;
+}
+th {
+    background: linear-gradient(90deg, #111111, #3a3a3a);
+    color: white;
+    font-weight: 600;
+}
+tr:last-child td { border-bottom: none; }
+.contact-box {
+    background: linear-gradient(145deg, #151515, #202020);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    border: 1px solid #303030;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+}
+.contact-item i {
+    font-size: 20px;
+    color: var(--primary);
+    background: #262626;
+    padding: 12px;
+    border-radius: 50%;
+}
+.contact-item a { color: var(--primary); text-decoration: none; }
+.contact-item a:hover { text-decoration: underline; }
+footer {
+    background: linear-gradient(135deg, #050505, #1c1c1c, #050505);
+    color: #bdbdbd;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 80px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    header { padding: 70px 20px; }
+    header h1 { font-size: 36px; }
+    header h3 { font-size: 18px; }
+    nav a { margin: 0 8px; font-size: 13px; }
+    .about { padding: 25px; }
+    .section-title { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Muvva Uday Kiran</h1>
+    <h3>Aspiring Software Developer | AI &amp; Data Enthusiast</h3>
+    <p>
+        MCA student passionate about building software applications,
+        intelligent solutions, and interactive web experiences using
+        Java, Python, React, Spring Boot, and SQL.
+    </p>
+    <a href="#contact" class="btn">
+        <i class="fa-solid fa-paper-plane"></i> Contact Me
+    </a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <div class="profile">UK</div>
+        <div class="about-text">
+            <h3>Hello, I'm Muvva Uday Kiran</h3>
+            <p>
+                I am an MCA student and aspiring software developer
+                from Andhra Pradesh, India.
+            </p>
+            <p>
+                I enjoy developing web applications, solving programming
+                problems, working with databases, and exploring artificial
+                intelligence and modern software technologies.
+            </p>
+            <p>
+                My interests include Java development, full-stack web
+                development, data analytics, and building practical
+                software projects.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill-card"><i class="fa-brands fa-java"></i>Java</div>
+        <div class="skill-card"><i class="fa-brands fa-python"></i>Python</div>
+        <div class="skill-card"><i class="fa-solid fa-database"></i>SQL &amp; MySQL</div>
+        <div class="skill-card"><i class="fa-brands fa-react"></i>React</div>
+        <div class="skill-card"><i class="fa-solid fa-leaf"></i>Spring Boot</div>
+        <div class="skill-card"><i class="fa-brands fa-html5"></i>HTML &amp; CSS</div>
+        <div class="skill-card"><i class="fa-brands fa-git-alt"></i>Git &amp; GitHub</div>
+        <div class="skill-card"><i class="fa-solid fa-chart-line"></i>Data Analytics</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Smart Expense &amp; Budget Tracker</h3>
+            <p>
+                Developed a web-based expense management application using Java,
+                Spring Boot, MySQL, HTML, CSS, and JavaScript. Features include
+                user authentication, expense management, data visualization,
+                and expense reporting.
+            </p>
+            <p>
+                <a href="https://github.com/Uday6790/expense-tracker-app"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View GitHub Project
+                </a>
+            </p>
+            <p>
+                <a href="expense-tracker.html" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-code"></i> View Developer Case Study
+                </a>
+            </p>
+            <p>
+                <a href="https://expense-tracker-app-ckop.onrender.com"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Application
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>E-Commerce Customer &amp; Sales Intelligence</h3>
+            <p>
+                Built a data analytics project using Python, Pandas, and Power BI
+                to analyze customer behavior, sales performance, and business
+                trends through interactive dashboards.
+            </p>
+            <p>
+                <a href="https://github.com/Uday6790/ecommerce-intelligence"
+                   target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View GitHub Project
+                </a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Smart City Management Platform</h3>
+            <p>
+                Developing an interactive smart city management platform using
+                React, Three.js, Java, Spring Boot, and MySQL. The project focuses
+                on 3D city visualization and complaint management.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MCA</strong></td>
+                    <td>RVR and JC College of Engineering</td>
+                </tr>
+                <tr>
+                    <td><strong>B.Sc (MSCS)</strong></td>
+                    <td>TJPS COLLEGE</td>
+                </tr>
+                <tr>
+                    <td><strong>Intermediate</strong></td>
+                    <td>TJPS COLLEGE</td>
+                </tr>
+                <tr>
+                    <td><strong>SSC</strong></td>
+                    <td>DR KKRS GOWTHAM SCHOOL</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-box">
+
+        <div class="contact-item">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <small>Name</small><br>
+                <strong>Uday Kiran</strong>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+                <small>Email</small><br>
+                <a href="mailto:ukuday981@gmail.com">ukuday981@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+                <small>GitHub</small><br>
+                <a href="https://github.com/uday6790"
+                   target="_blank" rel="noopener noreferrer">
+                    github.com/uday6790
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <small>Location</small><br>
+                <strong>Guntur, AP, India</strong>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 UDAY KIRAN | Aspiring Software Developer</p>
+</footer>
+
+</body>
+</html>
