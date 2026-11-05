@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Expense Tracker | Uday Kiran</title>
+<meta name="description" content="Developer case study: Smart Expense and Budget Tracker built with Java, Spring Boot, MySQL and JavaScript.">
+<style>
+:root{--bg:#080b14;--panel:#111827;--panel2:#151f32;--text:#eaf0ff;--muted:#9aa8c3;--cyan:#5ee7f7;--violet:#9b8cff;--line:#27334b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#172449 0,transparent 40%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1080px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.08em}.navlinks{display:flex;gap:22px;color:var(--muted)}
+.hero{padding:78px 0 54px}.tag{display:inline-block;border:1px solid #34506a;border-radius:999px;padding:5px 12px;color:var(--cyan);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.06;letter-spacing:-.04em;margin:22px 0}h1 span{background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.18rem;color:var(--muted);max-width:760px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;border-radius:12px;padding:11px 18px;font-weight:700;border:1px solid var(--line)}.btn.primary{background:linear-gradient(90deg,#5ee7f7,#9b8cff);color:#07101b;border:0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 55px}.stat,.card{background:linear-gradient(145deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:18px;padding:22px}.stat strong{display:block;font-size:1.25rem;color:var(--cyan)}.stat span{color:var(--muted);font-size:.9rem}
+section{padding:28px 0 45px}.eyebrow{color:var(--cyan);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}h2{font-size:clamp(1.7rem,4vw,2.5rem);margin:8px 0 20px;letter-spacing:-.03em}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.chip{border:1px solid #34415c;border-radius:999px;padding:5px 11px;color:#d8e4ff;font-size:.88rem}
+.arch{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;padding:24px;border-radius:18px;background:#0d1422;border:1px solid var(--line)}.archnode{padding:12px 16px;border:1px solid #42617c;border-radius:12px;text-align:center}.arrow{color:var(--cyan);font-size:1.4rem}
+ul{padding-left:20px;color:var(--muted)}li{margin:7px 0}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.stats,.grid{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.9rem}.hero{padding-top:50px}.arch{flex-direction:column}.arrow{transform:rotate(90deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="index.html">UDAY KIRAN / PORTFOLIO</a><div class="navlinks"><a href="index.html">Portfolio</a><a href="#architecture">Architecture</a><a href="#features">Features</a></div></nav>
+<header class="hero">
+<span class="tag">Full-Stack Software Engineering Case Study</span>
+<h1>Smart Expense<br><span>&amp; Budget Tracker</span></h1>
+<p class="lead">A full-stack web application for recording, organizing, and reviewing personal expenses. Built to demonstrate backend API development, database persistence, authentication, and an interactive frontend.</p>
+<div class="actions"><a class="btn primary" href="https://expense-tracker-app-ckop.onrender.com" target="_blank" rel="noopener">Open Live Application ↗</a><a class="btn" href="https://github.com/Uday6790/expense-tracker-app" target="_blank" rel="noopener">View Source Code ↗</a></div>
+</header>
+<div class="stats"><div class="stat"><strong>Java + Spring Boot</strong><span>Backend application</span></div><div class="stat"><strong>MySQL</strong><span>Relational data persistence</span></div><div class="stat"><strong>REST API</strong><span>Client-server communication</span></div></div>
+<section id="overview"><div class="eyebrow">01 / Overview</div><h2>Problem &amp; solution</h2><div class="card"><p>Tracking daily spending manually can make it difficult to understand where money goes. This project provides a simple web interface to manage expense records, categorize transactions, and view spending summaries. It is an educational, non-commercial portfolio project.</p></div></section>
+<section id="architecture"><div class="eyebrow">02 / System architecture</div><h2>How the application works</h2><div class="arch"><div class="archnode"><strong>Browser UI</strong><br><small>HTML · CSS · JavaScript</small></div><span class="arrow">→</span><div class="archnode"><strong>Spring Boot</strong><br><small>REST endpoints · Java</small></div><span class="arrow">→</span><div class="archnode"><strong>MySQL</strong><br><small>Expense records</small></div></div><p class="lead">The frontend sends requests to the Spring Boot backend. The backend validates and processes application operations and persists expense data in MySQL.</p></section>
+<section id="features"><div class="eyebrow">03 / Engineering features</div><h2>Implemented functionality</h2><div class="grid">
+<div class="card"><h3>Authentication</h3><p>User registration and login with password hashing for credential protection.</p></div>
+<div class="card"><h3>Expense CRUD</h3><p>Create, read, update, and delete expense entries with descriptions, amounts, categories, and dates.</p></div>
+<div class="card"><h3>Data visualization</h3><p>Charts provide a visual summary of spending categories and expense activity.</p></div>
+<div class="card"><h3>Export &amp; usability</h3><p>Expense data can be exported, and the interface supports everyday expense management.</p></div>
+</div></section>
+<section id="stack"><div class="eyebrow">04 / Technology</div><h2>Tech stack</h2><div class="chips"><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Spring Security</span><span class="chip">MySQL</span><span class="chip">REST API</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Chart.js</span><span class="chip">Render</span><span class="chip">Git / GitHub</span></div></section>
+<section id="learning"><div class="eyebrow">05 / Engineering learnings</div><h2>What this project demonstrates</h2><div class="card"><ul><li>Designing and connecting a frontend with backend REST endpoints.</li><li>Modeling expense records in a relational database.</li><li>Implementing authentication and handling user-specific application data.</li><li>Deploying a Java web application and troubleshooting cloud database connectivity.</li><li>Building a usable interface with charts and data export.</li></ul></div></section>
+<footer><span>© 2026 Uday Kiran · MCA · Software Development Portfolio</span><a href="index.html">← Back to portfolio</a></footer>
+</div>
+</body>
+</html>
